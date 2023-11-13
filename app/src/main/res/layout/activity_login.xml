@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
+
+
+    <!--TextView: Label Login-->
+    <TextView
+        android:layout_width ="match_parent"
+        android:textAlignment="center"
+        android:text= "Login"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"/>
+
+    //Input email
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EmailTIL"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+        <EditText
+            android:id="@+id/EmailEt"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    //Input password
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordTIL"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/EmailTIL"
+        app:passwordToggleEnabled="true"
+        >
+        <EditText
+            android:id="@+id/passwordET"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/LoginBtn"
+        android:text="Login"
+        android:layout_below="@id/passwordTIL"
+        android:layout_centerHorizontal="true"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    //click to go to Register activity
+
+    <TextView
+        android:id="@+id/nothave_accountTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoginBtn"
+        android:layout_marginTop="180dp"
+        android:text="Don't have account? Register"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200" />
+
+    <TextView
+        android:id="@+id/recoverPassTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoginBtn"
+        android:layout_marginTop="7dp"
+        android:text="Forgot Password? Recover"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200" />
+</RelativeLayout>

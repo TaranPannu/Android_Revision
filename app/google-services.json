@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "989925561306",
+    "project_id": "fall-2022-5a69d",
+    "storage_bucket": "fall-2022-5a69d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989925561306:android:ecb12fcf790fb2550a66e3",
+        "android_client_info": {
+          "package_name": "com.example.fall_2022"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989925561306-e0ceucgdnjpus3avhmr8ejd9v56nrejv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJRVyynVUZ-oMTisNf_Vyo5MHcWBQlop4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989925561306-e0ceucgdnjpus3avhmr8ejd9v56nrejv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
